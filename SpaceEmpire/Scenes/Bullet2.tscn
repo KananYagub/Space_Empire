@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://images/Ammo.png" type="Texture" id=1]
+
+[sub_resource type="CapsuleShape2D" id=1]
+height = 88.014
+
+[node name="Bullet" type="RigidBody2D"]
+mass = 0.00102041
+
+[node name="Sprite" type="Sprite" parent="."]
+rotation = 1.56146
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 590, 779, 49, 134 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.56146
+shape = SubResource( 1 )

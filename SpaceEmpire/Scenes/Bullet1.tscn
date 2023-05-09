@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/Bullet1.gd" type="Script" id=1]
+[ext_resource path="res://images/Ammo.png" type="Texture" id=2]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 4.85619
+height = 32.6764
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 10, 1 )
+
+[node name="Bullet" type="RigidBody2D"]
+collision_layer = 2
+collision_mask = 2
+mass = 0.00102041
+contacts_reported = 1
+contact_monitor = true
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 2.38419e-07, 0 )
+rotation = 1.56146
+scale = Vector2( 0.225139, 0.518983 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 780, 805, 51, 90 )
+
+[node name="Area2D" type="Area2D" parent="Sprite" groups=["bullet"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/Area2D"]
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 3 )
+
+[connection signal="body_entered" from="." to="." method="_on_Bullet_body_entered"]
+[connection signal="area_entered" from="Sprite/Area2D" to="." method="_on_Area2D_area_entered"]
