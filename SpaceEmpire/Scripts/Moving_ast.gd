@@ -9,11 +9,6 @@ var min_speed = globalvar.asteroid_speed_min
 var max_speed = globalvar.asteroid_speed_max
 
 
-
-
-
-
-
 func destroy():
 	emit_signal("destroyed")
 	print("Destroyed signal emitted")
