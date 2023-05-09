@@ -8,7 +8,7 @@ signal destroyed
 var min_speed = globalvar.asteroid_speed_min
 var max_speed = globalvar.asteroid_speed_max
 
-##Kanan
+##Develop
 
 func destroy():
 	emit_signal("destroyed")
