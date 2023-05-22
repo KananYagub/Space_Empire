@@ -1,2 +1,2 @@
-﻿59225
+﻿50019
 C:/Users/kyagublu/Desktop/Projects/Games/Godot_v3.5.1-stable_mono_win64/Godot_v3.5.1-stable_mono_win64/Godot_v3.5.1-stable_mono_win64.exe

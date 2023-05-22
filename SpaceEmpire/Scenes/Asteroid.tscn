@@ -1,6 +1,4 @@
-[gd_scene load_steps=3 format=2]
-
-[ext_resource path="res://images/Asteroid-PNG-Isolated-Pic.png" type="Texture" id=1]
+[gd_scene load_steps=2 format=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 44.5, 46 )
@@ -11,7 +9,6 @@ visible = false
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( -2, 4 )
 scale = Vector2( 1.04162, 1 )
-texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 252, 132, 105, 113 )
 
