@@ -17,7 +17,6 @@ func _ready():
 
 
 func _on_Start_pressed():
-	
 	get_tree().change_scene("res://Scenes/World.tscn")
 
 func _on_Options_pressed():
